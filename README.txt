@@ -1,6 +1,7 @@
 TAILWIND CSS 
 
 => UTILITY FIRST CSS FRAMEWORK
+(Instead of creating a selector and writing inside it, add all code as inline styling)
 
 => INSTEAD OF USING PRE DEFINED COMPONENTS AS IN BOOTSTRAP AND MATERIAL UI, HERE WE CAN CUSTOMISE OUR COMPONENTS AND THUS, MAKE IT LOOK DIFFERENT FROM NORMAL COMPONENTS.
 
@@ -10,6 +11,33 @@ TAILWIND CSS
 
 => HELPS TO ADD CSS FUNCTIONALITIES WITHOUT LEAVING HTML
 
+=> LATEST VERSION OF TAILWIND USES JIT COMPILER (JUST IN TIME). LOADS CSS JUST WHEN NEEDED. HELPS REDUCE LOAD.
+
+
 INSTALLATION
-npm i tailwindcss
+1. By using CDN
+(
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+)
+Add these lines also to use Tailwind Intellisense
+
+2. POSTCSS Method
+(
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init
+)
+
+ALSO MAKE ONE CHANGE IN PACKAGE.JSON
+"start": "vite" (after doing npm i vite)
+
+NEVER USE CDN FOR PRODUCTION, ONLY FOR DEV
+
+
+NOTE:
+REM IS THE BASIC UNIT INSTEAD OF PIXEL. REASON BEING MORE CUSTOMISABLE. 
+1 REM =16 PIXELS (CAN BE CHANGED)
+
+WHILE GIVING VALUES, mx-25, CHECK IN DOCS IF THE VALUE 25 CAN BE GIVEN OR NOT.
+
 
